@@ -1,3 +1,4 @@
+//prueba
 package practicaPaLuis;
 
 public class Automovil extends Transporte{
