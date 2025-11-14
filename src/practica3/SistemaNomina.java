@@ -1,4 +1,4 @@
-package principal;
+package practica3;
 
 import java.util.ArrayList;
 

@@ -1,10 +1,10 @@
-package Practica2;
+package practica4;
 
 public abstract class Persona {
     protected String nombre;
 
     public Persona(String nombre) {
-        this.nombre = nombre;
+        this.setNombre(nombre);
     }
 
     public String getNombre() {
@@ -12,8 +12,14 @@ public abstract class Persona {
     }
 
     public void setNombre(String nombre) {
+        if (this.nombre.length()>= 50) {
+            System.out.println("el nombre no puede ser tan largo");
+        }
         this.nombre = nombre;
     }
+
+    public abstract void registrarAcceso();
+
     
-    public abstract void verDetalle();
+    
 }
